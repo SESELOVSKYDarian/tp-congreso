@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/contacto.css" />
+  </head>
+  <body>
+    <header>
+      <div class="head">
+        <div class="texto">
+          <h1>Congreso de Informática y Tecnología</h1>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <div class="logo">CIT</div>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="/html/talleres.html">Talleres</a></li>
+        <li><a href="/html/charlas.html">Charlas</a></li>
+        <li><a href="/html/expo.html">Exposiones</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+    <section class="formulario">
+      <h2>Formulario de Registro</h2>
+      <form action="mailto:congresoInformatica2022@gmail.com" method="post" enctype="text/plain">
+        <div>
+          <label for="name" class="bold">Nombre de usuario*: </label>
+          <input id="name" type="text" placeholder="Juan Ortiz" required />
+        </div>
+        <br />
+        <div>
+          <label for="email" class="bold">Correo electrónico*: </label>
+          <input id="email" type="email" name="email" placeholder="example@example.com" required/>
+        </div>
+        <br />
+        <div>
+          <label for="dropdown" class="bold">Taller preferido</label>
+          <select id="dropdown" name="dropdown" required>
+            <option value="select" selected>Seleccionar</option>
+            <option value="taller_web">Taller de Diseño Web</option>
+            <option value="taller_3d">Taller de Impresión 3D</option>
+            <option value="taller_datos">Taller de Bases de Datos</option>
+            <option value="taller_grafico">Taller de Diseño Gráfico</option>
+          </select>
+        </div>
+        <div class="rating" id="rating1">
+            <input type="radio" name="star1" id="star1_5" value="5" /><label for="star1_5" title="5 estrellas" class="material-icons">star</label>
+            <input type="radio" name="star1" id="star1_4" value="4" /><label for="star1_4" title="4 estrellas" class="material-icons">star</label>
+            <input type="radio" name="star1" id="star1_3" value="3" /><label for="star1_3" title="3 estrellas" class="material-icons">star</label>
+            <input type="radio" name="star1" id="star1_2" value="2" /><label for="star1_2" title="2 estrellas" class="material-icons">star</label>
+            <input type="radio" name="star1" id="star1_1" value="1" /><label for="star1_1" title="1 estrella" class="material-icons">star</label>
+        </div>        
+        <br />
+        <div>
+          <label for="dropdown" class="bold">Charla preferida</label>
+          <select id="dropdown" name="dropdown" required>
+            <option value="select" selected>Seleccionar</option>
+            <option value="charla_serv">Charla sobre Servidores</option>
+            <option value="charla-ecom">Charla sobre E-Commerce</option>
+            <option value="charla_ia">Charla sobre Inteligencia Artificial</option>
+            <option value="charla_mining">Charla sobre Data Mining</option>
+            <option value="charla_it">Charla sobre Internet of Things</option>
+          </select>
+        </div>
+        <div class="rating" id="rating2">
+            <input type="radio" name="star2" id="star2_5" value="5" /><label for="star2_5" title="5 estrellas" class="material-icons">star</label>
+            <input type="radio" name="star2" id="star2_4" value="4" /><label for="star2_4" title="4 estrellas" class="material-icons">star</label>
+            <input type="radio" name="star2" id="star2_3" value="3" /><label for="star2_3" title="3 estrellas" class="material-icons">star</label>
+            <input type="radio" name="star2" id="star2_2" value="2" /><label for="star2_2" title="2 estrellas" class="material-icons">star</label>
+            <input type="radio" name="star2" id="star2_1" value="1" /><label for="star2_1" title="1 estrella" class="material-icons">star</label>
+        </div>        
+        <br />
+        <div>
+          <label for="dropdown" class="bold">Exposición preferida</label>
+          <select id="dropdown" name="dropdown" required>
+            <option value="select" selected>Seleccionar</option>
+            <option value="expo_a">Expo Grupo A</option>
+            <option value="expo_b">Expo Grupo B</option>
+            <option value="expo_c">Expo Grupo C</option>
+          </select>
+        </div>
+        <div class="rating" id="rating3">
+            <input type="radio" name="star3" id="star3_5" value="5" /><label for="star3_5" title="5 estrellas" class="material-icons">star</label>
+            <input type="radio" name="star3" id="star3_4" value="4" /><label for="star3_4" title="4 estrellas" class="material-icons">star</label>
+            <input type="radio" name="star3" id="star3_3" value="3" /><label for="star3_3" title="3 estrellas" class="material-icons">star</label>
+            <input type="radio" name="star3" id="star3_2" value="2" /><label for="star3_2" title="2 estrellas" class="material-icons">star</label>
+            <input type="radio" name="star3" id="star3_1" value="1" /><label for="star3_1" title="1 estrella" class="material-icons">star</label>
+        </div>        
+        <br />
+        <fieldset>
+          <legend class="bold">¿Qué temas podemos tener en cuenta en el próximo congreso?</legend>
+          <input id="seguridad" type="checkbox" name="temas" value="seguridad"/>
+          <label for="seguridad">Seguridad</label><br />
+          <input id="redes" type="checkbox" name="temas" value="redes" />
+          <label for="redes">Redes</label><br />
+          <input id="bases_datos" type="checkbox" name="temas" value="bases_datos"/>
+          <label for="bases_datos">Bases de Datos</label><br />
+          <input id="ia" type="checkbox" name="temas" value="ia" />
+          <label for="ia">Inteligencia Artificial</label><br />
+          <input id="apps" type="checkbox" name="temas" value="apps" />
+          <label for="apps">Aplicaciones Móviles</label><br />
+          <input id="web" type="checkbox" name="temas" value="web" />
+          <label for="web">Desarrollo Web</label><br />
+        </fieldset>
+        <br />
+        <button id="submit" type="submit">Enviar</button>
+      </form>
+    </section>
+  </body>
+</html>
